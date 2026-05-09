@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo para mamà</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e0, #fff0f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor tipo tarjeta */
+.screen {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.polaroid {
+  background: white;
+  padding: 10px 10px 40px 10px; /* el espacio de abajo da el efecto */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  transform: rotate(-2deg); /* pequeña inclinación opcional */
+}
+
+.polaroid img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Dancing Script', cursive; /* letra manuscrita, opcional */
+  color: #555;
+}
+
+.active {
+  display: block;
+  animation: fade 0.8s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff8fab;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+</style>
+</head>
+<body>
+    <div class="screen active" id="screen1">
+        <h1>¡Feliz Día de la Madre!</h1>
+        <p>Querida mamá, hoy es tu día especial y quiero celebrarlo contigo de una manera única. He preparado algo muy especial para ti, así que prepárate para una experiencia inolvidable.</p>
+        <button onclick="nextScreen(2)">Toca aquí 💌</button>
+    </div>
+
+    <div class="screen" id="screen2">
+      <div class="polaroid">
+  <img src="img de inicio.jpg" alt="foto">
+  <p>✨</p>
+</div>
+        <h2>Un Viaje al Pasado</h2>
+        <p>Vamos a dar un paseo por los recuerdos.</p>
+        <button onclick="nextScreen(3)">Siguiente</button>
+    </div>
+
+    <div class="screen" id="screen3">
+        <h2>El inicio</h2>
+        <p>Recuerdas ese momento donde te enteraste que serias mamà por segunda vez?, ¿que sentiste al saber que era yo?</p>
+        <div class="polaroid">
+  <img src="mami embarazada.JPG" alt="foto">
+  <p>Un recuerdo ✨</p>
+</div>
+        <button onclick="nextScreen(4)">Ver el Regalo</button>
+    </div>
+
+    <div class="screen" id="screen4">
+        <h2>¡Sorpresa!</h2> <div class="polaroid">
+  <img src="img screen 3.JPG" alt="foto">
+  <p>✨</p>
+</div>
+        <p> Llegue para cambiar tu vida para siempre y para darte todo el amor que mereces </p>
+        <button onclick="nextScreen(5)">Finalizar</button>
+    </div>
+
+    <div class="screen" id="screen5">
+        <h2>Gracias por ser mi mamá</h2>
+        <div class="polaroid">
+  <img src="Snapshot_20130912.JPG" alt="foto">
+  <p>Querida madre...</p>
+        <p> Puede que no te haya gustado el regalo, puede que esto no sea lo que querrias pero es lo que te puedo dar por el momento
+          se que no soy una buena hija, ni la hija que ubieras querrido tener, pero quiero que sepas que te amo con todo mi corazo,
+          y siempre, siempre te voy a querer, no importa lo que pase, no importa lo que haga, siempre te voy a querer, y espero que algun dia pueda ser la hija que ubieras querido tener,
+          No se como te haga sentir eso pero eres la mejor mamà del mundo, nadie te puede remplazar sin importar lo que pase, tu eres mi mami, la que me dio la vida,
+          la que me esta criando, la que me esta educando, la que me esta enseñando a ser una gran persona. Te quiero mucho mamà
+          espero que te hagia gustado el regalo ya que lo hice con todo mi amor para ti.
+          Gracias por todo, mamà</p>
+    </div>
+    <audio id="music" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+
+    <script>
+      function nextScreen(num) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen' + num).classList.add('active');
+
+  let music = document.getElementById('music');
+  music.play().catch(() => {});
+}
+</script>
+
+</body>
+</html>
