@@ -109,7 +109,7 @@ These aren't necessarily serious projects. They're just things I made because I 
 
 <div align="center">
 
-🎵 **Soda Stereo — ???**
+🎵 **Soda Stereo — No existes**
 
 `████████████████░░░░` 80%
 
