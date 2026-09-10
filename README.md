@@ -122,8 +122,8 @@ These aren't necessarily serious projects. They're just things I made because I 
 │       🎮 GAME STATUS         │
 ├──────────────────────────────┤
 │  Minecraft       ████████  ♡ │
-│  One Piece       ██████░░  ♡ │
-│  Random games    █████░░░  ♡ │
+│  Free fire       ██████░░  ♡ │
+│  Sudoku          █████░░░  ♡ │
 ╰──────────────────────────────╯
 ```
 
