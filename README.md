@@ -96,7 +96,7 @@ These aren't necessarily serious projects. They're just things I made because I 
 
 | project | what is it? | vibe |
 |---|---|---|
-| 🎮 Game | a little browser game | `chaotic` |
+| 🎂 birthday card | a little browser game | `chaotic` |
 | 📸 Photo App | a small photo experiment | `cozy` |
 | 🤖 Motion Detection | Python + OpenCV experiment | `nerdy` |
 | 📱 Android App | one of my first Android experiments | `learning` |
