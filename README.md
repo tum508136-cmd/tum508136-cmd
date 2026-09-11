@@ -9,7 +9,6 @@
 <a href="#-latest-entries">entries</a> ·
 <a href="#-little-projects">projects</a> ·
 <a href="#-currently-playing">playing</a> ·
-<a href="#-blog">blog</a>
 
 </div>
 
