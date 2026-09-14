@@ -97,6 +97,7 @@ These aren't necessarily serious projects. They're just things I made because I 
 |---|---|---|
 | 🎂 birthday card | card for my little blackberry | `chaotic` |
 | 📸 Photo App | a small photo experiment | `cozy` |
+| 💻 school exhibition | html exposure tags| `sad` |
 
 </div>
 
